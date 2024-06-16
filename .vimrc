@@ -11,6 +11,7 @@ endif
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 call plug#end()
 
 " lightline
@@ -32,3 +33,8 @@ let g:lightline = {
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+" LeaderF
+let g:Lf_ShortcutF = '<c-p>'
+" Show icons, icons are shown by default
+let g:Lf_ShowDevIcons = 0
