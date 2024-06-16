@@ -20,7 +20,15 @@ if !has('gui_running')
 endif
 let g:lightline = {
 	      \ 'colorscheme': 'wombat',
-      \ }
+	      \ 'active': {
+	      \     'left':  [  [ 'mode', 'paste' ],
+	      \                 [ 'readonly', 'filename', 'modified', 'saysth' ] ]
+	      \ },
+	      \ 'component': {
+	      \   'saysth': 'HAPPY EVERY DAY OK? YOU ARE NOT ONLY ONE!',
+	      \   'sunnyday': 'RE SO SO SI DO SI LA SO LA SI SI SI SI LA SI LA SO'
+	      \ },
+	      \ }
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
