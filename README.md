@@ -48,3 +48,4 @@ https://stackoverflow.com/questions/59797272/receiving-fatal-could-not-read-user
 https://www.linuxmi.com/vim-install-plugins.html
 https://blog.csdn.net/weixin_45859128/article/details/120366165
 https://www.cnblogs.com/zhaodehua/articles/15108744.html
+https://www.cnblogs.com/mrdoghead/p/15246803.html
