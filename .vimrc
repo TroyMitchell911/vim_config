@@ -8,5 +8,6 @@ if has("autocmd")
         \ endif
 endif
 
-
-
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+call plug#end()
