@@ -26,7 +26,7 @@ let g:lightline = {
 	      \                 [ 'readonly', 'filename', 'modified', 'saysth' ] ]
 	      \ },
 	      \ 'component': {
-	      \   'saysth': 'HAPPY EVERY DAY OK? YOU ARE NOT ONLY ONE!',
+	      \   'saysth': 'HAPPY EVERY DAY',
 	      \   'sunnyday': 'RE SO SO SI DO SI LA SO LA SI SI SI SI LA SI LA SO'
 	      \ },
 	      \ }
