@@ -39,5 +39,7 @@ let g:Lf_ShortcutF = '<c-p>'
 " Show icons, icons are shown by default
 let g:Lf_ShowDevIcons = 0
 
+" cscope
 " set tags folder
 set tags=./tags;/
+source ~/.cscope_maps.vim
