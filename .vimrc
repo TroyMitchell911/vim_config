@@ -38,3 +38,6 @@ map <C-n> :NERDTreeToggle<CR>
 let g:Lf_ShortcutF = '<c-p>'
 " Show icons, icons are shown by default
 let g:Lf_ShowDevIcons = 0
+
+" set tags folder
+set tags=./tags;/
