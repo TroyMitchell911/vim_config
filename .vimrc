@@ -34,6 +34,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " Plug 'Valloric/YouCompleteMe'
 Plug 'preservim/tagbar'
+Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'tag': 'v0.0.82'}
 call plug#end()
 
