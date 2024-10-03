@@ -15,6 +15,10 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 inoremap <silent><expr> <cr> coc#pum#visible() && coc#pum#info()['index'] != -1 ? coc#pum#confirm() :
         \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" 使用 Ctrl + k 打开 Tagbar，设置行号并聚焦
+nnoremap <C-k> :TagbarToggle<CR>:wincmd p<CR>:set number<CR>:set relativenumber<CR>
+" 使用 Ctrl + k then  r 刷新 Tagbar
+nnoremap <A-k> :TagbarRefresh<CR>
 set number relativenumber
 " 保存并恢复光标位置
 if has("autocmd")
@@ -29,6 +33,7 @@ Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 " Plug 'Valloric/YouCompleteMe'
+Plug 'preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'tag': 'v0.0.82'}
 call plug#end()
 
