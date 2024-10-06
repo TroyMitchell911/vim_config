@@ -15,10 +15,9 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 inoremap <silent><expr> <cr> coc#pum#visible() && coc#pum#info()['index'] != -1 ? coc#pum#confirm() :
         \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-" 使用 Ctrl + k 打开 Tagbar，设置行号并聚焦
-nnoremap <C-k> :TagbarToggle<CR>:wincmd p<CR>:set number<CR>:set relativenumber<CR>
-" 使用 Ctrl + k then  r 刷新 Tagbar
-nnoremap <A-k> :TagbarRefresh<CR>
+" 使用 Alt + f 打开 Tagbar，设置行号并聚焦
+nnoremap <Esc>f :TagbarToggle<CR>:wincmd p<CR>:set number<CR>:set relativenumber<CR>
+
 set number relativenumber
 " 保存并恢复光标位置
 if has("autocmd")
@@ -36,6 +35,7 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'preservim/tagbar'
 Plug 'jiangmiao/auto-pairs'
 Plug 'neoclide/coc.nvim', {'tag': 'v0.0.82'}
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 " Plug 'Valloric/YouCompleteMe'
@@ -70,6 +70,5 @@ set tags=./tags;/
 source ~/.cscope_maps.vim
 
 " dynamic search
-"
 set incsearch
 set hlsearch
