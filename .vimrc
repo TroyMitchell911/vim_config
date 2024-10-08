@@ -15,6 +15,8 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 inoremap <silent><expr> <cr> coc#pum#visible() && coc#pum#info()['index'] != -1 ? coc#pum#confirm() :
         \ "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+inoremap <silent><expr> <C-Space> coc#refresh()
+
 " 使用 Alt + f 打开 Tagbar，设置行号并聚焦
 nnoremap <Esc>f :TagbarToggle<CR>:wincmd p<CR>:set number<CR>:set relativenumber<CR>
 
